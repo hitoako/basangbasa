@@ -1,4 +1,3 @@
 import subprocess
 
-# This will execute the 'ls' command to list directory contents on Unix-based systems
-subprocess.run(["ls", "-l"])
+subprocess.run(["xfce4-terminal", "--", "bash", "-c", "ls; exec bash"])
