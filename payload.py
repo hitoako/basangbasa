@@ -1,3 +1,6 @@
-import subprocess
+# Open a file named hello.txt in write mode
+with open('hello.txt', 'w') as file:
+    # Write "Hello, World!" to the file
+    file.write("Hello, World!")
 
-subprocess.run(["xfce4-terminal", "--", "bash", "-c", "ls; exec bash"])
+print("File 'hello.txt' created and written successfully.")
