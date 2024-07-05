@@ -1,3 +1,4 @@
-with open("dropped_file.txt", "w") as f:
-    f.write("This is a dropped file.\n")
-print("Payload executed.")
+import subprocess
+
+# Open a new GNOME Terminal window and list directory contents
+subprocess.run(["gnome-terminal", "--", "bash", "-c", "ls; exec bash"])
